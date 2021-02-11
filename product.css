@@ -1,0 +1,90 @@
+body {
+  color: #301409;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav {
+  width: 50vw;
+  margin: auto;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header ul li img {
+  max-width: 10vw;
+}
+header li a {
+  text-decoration: none;
+  color: #301409;
+  font-weight: bolder;
+}
+
+header li {
+  list-style: none;
+  margin: 2vw;
+}
+#breadcrumbs {
+  margin-bottom: 7vw;
+}
+
+#breadcrumbs ul {
+  display: flex;
+  gap: 1vw;
+}
+
+#breadcrumbs li {
+  list-style: none;
+}
+
+#breadcrumbs a {
+  color: #301409;
+}
+main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 6vw;
+  max-width: 70%;
+  margin: auto;
+}
+#wrapper img {
+  max-width: 45%;
+}
+
+#product_text {
+  border: solid #301409;
+  padding: 3vw;
+}
+
+#product_text ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrapper li {
+  list-style: none;
+}
+
+#product_text .brand {
+  opacity: 0.5;
+  font-size: 1.5em;
+}
+
+#product_text button {
+  background-color: #301409;
+  padding: 2vw;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  font-size: 2em;
+  font-weight: bold;
+}
