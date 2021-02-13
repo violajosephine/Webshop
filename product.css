@@ -28,7 +28,7 @@ header li {
   list-style: none;
 }
 #breadcrumbs {
-  margin-bottom: 7vw;
+  margin-bottom: 5vw;
 }
 
 #breadcrumbs ul {
@@ -58,14 +58,14 @@ main {
 }
 #wrapper img {
   flex-shrink: 3;
-  max-width: 50%;
+  max-width: 45%;
   height: 40%;
 }
 
 #product_text {
   border: solid #301409;
   padding: 2vw;
-  width: 60%;
+  width: 70%;
 }
 
 #product_text ul {
@@ -73,6 +73,11 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 90%;
+}
+
+#product_text li {
+  margin-bottom: 1vw;
+  margin-top: 1vw;
 }
 #wrapper li {
   list-style: none;
@@ -82,7 +87,7 @@ main {
 #product_text .brand {
   opacity: 0.5;
   font-size: 1.5em;
-  margin-top: -1vw;
+  margin-top: -2vw;
   font-style: oblique;
 }
 #product_text .price {
@@ -135,7 +140,8 @@ main {
   font-size: 2em;
   font-weight: bold;
   margin-top: 2vw;
-  margin-left: 13%;
+  align-self: center;
+  margin-left: 15%;
 }
 footer {
   margin-top: 4vw;
