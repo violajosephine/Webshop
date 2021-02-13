@@ -21,6 +21,7 @@ header ul li img {
 header li a {
   text-decoration: none;
   color: #301409;
+  font-weight: bold;
 }
 
 header li {
@@ -40,17 +41,101 @@ header li {
   color: #301409;
 }
 
+main {
+  width: 80%;
+  margin: auto;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+}
+
+main header {
+  text-align: center;
+  margin: 3vw;
+}
+
 article {
   border: solid #301409;
-  width: 30vw;
-  padding: 2vw;
+  width: 20vw;
+  padding: 1vw;
 }
 
 article img {
   max-width: 90%;
-  margin: auto;
 }
 
 article li {
   list-style: none;
+}
+
+article li {
+  color: #301409;
+}
+article a {
+  text-decoration: none;
+}
+
+article ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+article .brand {
+  opacity: 0.5;
+  margin-top: -1.5vw;
+  font-style: italic;
+}
+
+article .price {
+  font-size: 1.3em;
+  font-weight: bolder;
+  padding-left: 0.5vw;
+}
+
+article.sold_out {
+  opacity: 0.5;
+}
+
+article.sold_out::before {
+  content: "sold out";
+  text-transform: uppercase;
+  position: absolute;
+  background-color: #301409;
+  color: white;
+  padding: 2vw;
+  border-radius: 60%;
+  width: 2.5vw;
+  font-weight: bolder;
+  text-align: center;
+}
+
+article .prev_price {
+  text-decoration: line-through;
+}
+
+article .discount_percent {
+  text-transform: uppercase;
+}
+
+article .discount {
+  display: none;
+}
+
+article.on_sale div.discount {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4vw;
 }
