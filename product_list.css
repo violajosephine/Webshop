@@ -70,11 +70,9 @@ article img {
 
 article li {
   list-style: none;
-}
-
-article li {
   color: #301409;
 }
+
 article a {
   text-decoration: none;
 }
@@ -83,6 +81,7 @@ article ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -98,6 +97,7 @@ article .price {
   font-size: 1.3em;
   font-weight: bolder;
   padding-left: 0.5vw;
+  margin-top: 2vw;
 }
 
 article.sold_out {
