@@ -52,6 +52,10 @@ h2 {
   font-size: 1em;
   line-height: 3vw;
 }
+
+a {
+  text-decoration-color: #301409;
+}
 /* main a {
   text-decoration: none;
 } */
