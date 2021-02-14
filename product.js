@@ -1,5 +1,5 @@
 //shorten the link
-const url = "https://kea-alt-del.dk/t7/api/products/1543";
+const url = "https://kea-alt-del.dk/t7/api/products/1163";
 //fetch the data
 fetch(url)
   .then((res) => res.json())
@@ -10,7 +10,8 @@ fetch(url)
 function showProduct(product) {
   console.log(product);
 
-  document.querySelector(".category").textContent = product.subcategory + "/ ";
+  document.querySelector(".category").textContent = product.category + "/ ";
+
   document.querySelector(".product_name").textContent =
     product.productdisplayname;
 

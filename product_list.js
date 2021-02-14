@@ -1,4 +1,4 @@
-const url = "https://kea-alt-del.dk/t7/api/products";
+const url = "https://kea-alt-del.dk/t7/api/products?limit=100&category=apparel";
 //Get the data.
 //Then return the json data.
 //Then call the function that loops the data
