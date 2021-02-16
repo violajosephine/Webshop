@@ -1,5 +1,10 @@
+const urlParams = new URLSearchParams(window.location.search);
+//in the url grab id and store them under id
+const id = urlParams.get("id");
+console.log(id);
+
 //shorten the link
-const url = "https://kea-alt-del.dk/t7/api/products/1163";
+const url = "https://kea-alt-del.dk/t7/api/products/" + id;
 //fetch the data
 fetch(url)
   .then((res) => res.json())
@@ -14,7 +19,6 @@ function showProduct(product) {
 
   document.querySelector(".product_name").textContent =
     product.productdisplayname;
-
   document.querySelector(".product_image").src =
     "https://kea-alt-del.dk/t7/images/webp/640/" + product.id + ".webp";
   document.querySelector(".product_image").alt = product.productdisplayname;

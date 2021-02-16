@@ -17,6 +17,8 @@ function showCategory(category) {
   //clone a copy
   const copy = template.cloneNode(true);
   //change content of copy
+  copy.querySelector("a").href =
+    "product_list.html?category=" + category.category;
   copy.querySelector("h2").textContent = category.category;
   //grab parent
   const parent = document.querySelector("section");

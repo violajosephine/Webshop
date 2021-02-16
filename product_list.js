@@ -1,4 +1,10 @@
-const url = "https://kea-alt-del.dk/t7/api/products?limit=100&category=apparel";
+const urlParams = new URLSearchParams(window.location.search);
+//in the url grab catgory and store them under category
+const category = urlParams.get("category");
+console.log(category);
+
+const url =
+  "https://kea-alt-del.dk/t7/api/products?limit=100&category=" + category;
 //Get the data.
 //Then return the json data.
 //Then call the function that loops the data
@@ -16,11 +22,16 @@ function handleProductlist(data) {
 }
 
 function showProduct(product) {
+  document.querySelector("h1").textContent = product.category;
+
   //grab template
   const template = document.querySelector("#reg_product_template").content;
   //clone it
   const copy = template.cloneNode(true);
   //change content
+
+  copy.querySelector("a").href = "product.html?id=" + product.id;
+
   copy.querySelector("h2").textContent = product.productdisplayname;
   copy.querySelector(".brand").textContent = product.brandname;
   copy.querySelector("article img").src =
