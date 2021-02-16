@@ -4,7 +4,7 @@ const category = urlParams.get("category");
 console.log(category);
 
 const url =
-  "https://kea-alt-del.dk/t7/api/products?limit=100&category=" + category;
+  "https://kea-alt-del.dk/t7/api/products?limit=200&category=" + category;
 //Get the data.
 //Then return the json data.
 //Then call the function that loops the data
@@ -38,7 +38,9 @@ function showProduct(product) {
     "https://kea-alt-del.dk/t7/images/webp/640/" + product.id + ".webp";
   copy.querySelector("article img").alt = product.productdisplayname;
   copy.querySelector(".price").textContent =
-    product.price - (product.discount / 100) * product.price + "kr.";
+    product.price -
+    (product.discount / 100) * product.price.toPrecision(2) +
+    "kr.";
   copy.querySelector(".discount_percent").textContent =
     product.discount + "% off";
   copy.querySelector(".prev_price").textContent = product.price + "kr.";
