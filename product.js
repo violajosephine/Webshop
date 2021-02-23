@@ -16,6 +16,8 @@ function showProduct(product) {
   console.log(product);
 
   document.querySelector(".category").textContent = product.category + "/ ";
+  document.querySelector(".category").href =
+    "product_list.html?category=" + product.category;
 
   document.querySelector(".product_name").textContent =
     product.productdisplayname;
@@ -24,7 +26,7 @@ function showProduct(product) {
   document.querySelector(".product_image").alt = product.productdisplayname;
   document.querySelector(".brand").textContent = product.brandname;
   document.querySelector("h1").textContent = product.productdisplayname;
-  document.querySelector(".price").textContent = product.price;
+  document.querySelector(".price").textContent = product.price + "kr.";
   document.querySelector(".description").innerHTML = product.description;
   document.querySelector(".color_box").style.backgroundColor =
     product.basecolour;

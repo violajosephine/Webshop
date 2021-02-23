@@ -22,6 +22,7 @@ function handleProductlist(data) {
 }
 
 function showProduct(product) {
+  document.querySelector(".category").textContent = product.category;
   document.querySelector("h1").textContent = product.category;
 
   //grab template
