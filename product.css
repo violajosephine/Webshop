@@ -153,3 +153,7 @@ footer {
   margin-top: 4vw;
   text-align: center;
 }
+
+footer p {
+  opacity: 50%;
+}
